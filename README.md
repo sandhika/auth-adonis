@@ -1,6 +1,6 @@
-# adonis-boilerplate-jwt
+# auth-adonis
 
-Boilerplate/Starter Project for building RESTful APIs using Adonis, MySQL, JWT authentication.
+Boilerplate/Starter Project for building RESTful APIs using Adonis, SQLite, JWT authentication.
 
 ## Setup
 
@@ -67,4 +67,25 @@ Logout
 ```bash
 POST /api/v1/auth/logout
 {refresh_token:'REFRESH_TOKEN'}
+```
+
+Product -> Download Product from Resource JDS
+
+```bash
+GET /api/v1/products/download
+Authorization : Bearer YOUR_TOKEN
+```
+
+Product -> Get One Dollar to IDR from API
+
+```bash
+GET /api/v1/products/currency
+Authorization : Bearer YOUR_TOKEN
+```
+
+Product -> Get All Data
+
+```bash
+GET /api/v1/products/all
+Authorization : Bearer YOUR_TOKEN
 ```
